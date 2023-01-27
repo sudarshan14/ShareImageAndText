@@ -52,7 +52,7 @@ class MainActivityKotlin : AppCompatActivity() {
             outputStream.flush()
             outputStream.close()
 
-            uri = FileProvider.getUriForFile(this, "com.anni.shareimage.fileprovider", file)
+            uri = FileProvider.getUriForFile(this, "com.amlavati", file)
         } catch (e: Exception) {
             Toast.makeText(this, "" + e.message, Toast.LENGTH_LONG).show()
 
